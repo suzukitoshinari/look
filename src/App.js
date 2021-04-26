@@ -11,10 +11,10 @@ function App() {
   const [thick, setThick] = useState('2');
   const [files, selectFiles] = useFileUpload();
 
-  const Save = () => {
-    const data = canvasRef.current.getSaveData();
-    console.log(data);
-  }
+  // const Save = () => {
+  //   const data = canvasRef.current.getSaveData();
+  //   console.log(data);
+  // }
 
   const Clear = () => {
     canvasRef.current.clear();
@@ -42,7 +42,7 @@ function App() {
       <div className='main_container'>
         <div className='container'>
           <div className='btn'>
-            <button onClick={Save}>保存</button>
+            {/* <button onClick={Save}>保存</button> */}
             <button onClick={Clear}>削除</button>
             <button onClick={Undo}>前に戻る</button>
             <button
